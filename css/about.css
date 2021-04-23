@@ -1,0 +1,227 @@
+/* RESETS */
+
+p {
+  margin: 0;
+}
+
+/* GLOBAL */
+
+body {
+  background-color: #e8e8e8;
+  color: #000;
+  font-family: verdana, arial, sans-serif, helvetica;
+  font-size: 16px;
+  margin: 0;
+  min-width: 920px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.link {
+  align-items: center;
+  color: #003aab;
+  display: inline-flex;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover span {
+  text-decoration: underline;
+}
+
+.link .link__icon.link__icon--right {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+/* header */
+
+.about .about__header {
+  background-color: #003aa3;
+  padding: 10px;
+}
+
+.about .about__myspace {
+  width: 200px;
+}
+
+/* profile */
+
+.about {
+  margin: 10px auto;
+  max-width: 900px;
+}
+
+.about .about__main {
+  background-color: white;
+  display: grid;
+  font-family: sans-serif;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+  padding: 1em 1em 2em 1em;
+}
+
+.about .about__left {
+  margin-right: 30px;
+}
+
+.about .about__img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+}
+
+.about .about__link {
+  color: var(--lightest-pink);
+}
+
+/* profile */
+
+.profile {
+  margin-bottom: 1em;
+}
+
+.profile .profile__quote,
+.profile .profile__info,
+.profile .profile__location {
+  margin-bottom: 1em;
+}
+
+.profile .profile__top-container {
+  display: flex;
+}
+
+.profile .profile__pic {
+  margin-bottom: 1em;
+  width: 180px;
+}
+
+.profile .profile__details {
+  margin-left: 1em;
+}
+
+/* contact and interests */
+
+.contact {
+  margin-bottom: 1em;
+}
+
+.contact .contact__link {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.contact .contact__header,
+.contact .contact__details,
+.interests .interests__header {
+  border: 1px solid #dbeaf2;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact .contact__header,
+.interests .interests__header {
+  background-color: #6ca6d6;
+  box-shadow:
+    inset 1px 1px #405c7f,
+    1px 1px #405c7f;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 4px 2px 14px;
+}
+
+.contact .contact__details,
+.interests .interests__details {
+  box-shadow:
+    inset 1px 1px #405c7f,
+    1px 1px #405c7f;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 5px 10px;
+}
+
+.contact .contact__icon {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.contact .contact__icon.contact__icon--full {
+  width: 100px;
+}
+
+/* interests */
+
+.interests {
+  margin-bottom: 1em;
+}
+
+.interests .interests__row {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 5px;
+}
+
+.interests .interests__row.interests__row--details {
+  grid-template-columns: 40% 60%;
+}
+
+.interests .interests__row .interests__label {
+  background-color: #b6d5f6;
+  color: #3b75b0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.interests .interests__row .interests__content {
+  background-color: #dbeffc;
+  padding: 5px;
+}
+
+/* right side */
+
+.about .about__subheader {
+  background-color: #ffd49e;
+  color: #fc7a1e;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 4px 2px 14px;
+  margin: 2em auto 1em auto;
+}
+
+/* network */
+
+.network .network__banner {
+  border: 1px solid #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 1em;
+}
+
+.network .network__socials {
+  margin-bottom: 2em;
+}
+
+.network .network__entry {
+  margin-bottom: 1em;
+}
+
+.network .network__link {
+  margin: auto 3px;
+}
+
+/* bio */
+
+.bio {
+  padding: 0 10px;;
+}
+
+.bio .bio__p:not(:last-of-type) {
+  margin-bottom: 1em;
+}

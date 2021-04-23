@@ -1,0 +1,323 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.cover {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.cover img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.button {
+  border: 2px solid #000;
+  border-radius: 3px;
+  box-shadow: 2px 2px #000;
+  color: #000;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 6px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #fff789;
+  box-shadow: -2px -2px #000;
+}
+
+.button.button--disabled {
+  background-color: #f0f0f0;
+  border: 2px solid #737373;
+  box-shadow: 2px 2px #737373;
+  color:#737373;
+}
+
+.button.button--disabled:hover {
+  cursor: auto;
+}
+
+.button__label {
+  align-items: center;
+  display: flex;
+  margin-right: 5px;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  align-items: center;
+  background-color: #e8e8e8;
+  display: flex;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.breadcrumb.breadcrumb--white {
+  background-color: #fff;
+}
+
+.breadcrumb.breadcrumb--about {
+  padding: 0;
+  position: relative;
+  margin-left: -5px;
+}
+
+.breadcrumb__link {
+  border-radius: 6px;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.breadcrumb__link:hover {
+  background-color: #fff;
+}
+
+.breadcrumb--white .breadcrumb__link:hover {
+  background-color: #f2f2f2;
+}
+
+.breadcrumb__link.breadcrumb__link--yellow:hover {
+  background-color: #fff789;
+  border-radius: 0;
+}
+
+.breadcrumb__divider {
+  color: #d8d8d8;
+  margin: 0 8px;
+}
+
+/* home layout */
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* baseline widget */
+
+.widget {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px #000;
+  border-radius: 6px;
+  color: #000;
+  margin: 10px;
+}
+
+.widget .widget__header {
+  border-bottom: 2px solid #000;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 0 3px 0;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.widget .widget__title {
+  display: flex;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.widget .widget__icon {
+  margin-right: 5px;
+}
+
+.widget__lines {
+  width: 100%;
+}
+
+.line {
+  border-bottom: 1px solid #000;
+  margin-bottom: 2px;
+}
+
+.widget__body {
+  padding: 15px 20px;
+}
+
+.widget__p {
+  margin-bottom: 15px;
+}
+
+/* nav */
+
+.nav__anchor {
+  margin-bottom: 10px;
+}
+
+/* changelog */
+
+.changelog {
+  max-height: 380px;
+  overflow-y: scroll;
+}
+
+.changelog__entry {
+  margin-bottom: 15px;
+}
+
+.changelog__date {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.changelog__details {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+/* contact */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px;
+}
+
+.contacts__link {
+  align-items: center;
+  border: 0;
+  border-bottom: 2px dashed #000;
+  box-shadow: unset;
+  display: flex;
+  margin: 0 2px;
+}
+
+.contacts__link:hover {
+  background-color: #fff789;
+  box-shadow: unset;
+}
+
+.contacts__icon {
+  margin-right: 5px;
+}
+
+/* listening */
+
+.listening {
+  padding: 20px 5px 10px 20px;
+}
+
+.listening__song {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.listening__iframe {
+  margin-right: 15px;
+}
+
+/* goodreads */
+
+.goodreads {
+  padding: 15px 20px 5px 20px;
+}
+
+.goodreads__embed h2,
+.goodreads__embed br,
+.goodreads__embed center {
+  display: none;
+}
+
+.goodreads__embed .gr_custom_each_container_1616241117 {
+  /* book container */
+  margin-bottom: 15px;
+}
+
+.goodreads__embed .gr_custom_book_container_1616241117 {
+  /* book cover */
+  position: absolute;
+  margin-top: 5px;
+}
+
+.goodreads__embed .gr_custom_title_1616241117,
+.goodreads__embed .gr_custom_author_1616241117,
+.goodreads__embed .gr_custom_tags_1616241117 {
+  margin-left: 65px;
+}
+
+.goodreads__embed .gr_custom_title_1616241117 a,
+.goodreads__embed .gr_custom_author_1616241117 a {
+  color: #000;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.goodreads__embed .gr_custom_title_1616241117 a {
+  font-weight: bold;
+}
+
+.goodreads__embed .gr_custom_tags_1616241117 {
+  color: #737373;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* footer */
+
+.footer {
+  align-items: center;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 40px auto;
+}
+
+.footer .footer__button {
+  margin: 3px;
+}
+
+/* small screens */
+
+@media screen and (max-width: 900px) {
+
+  body.is-responsive {
+    min-width: unset;
+    padding: 20px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .widget {
+    margin: 0 0 20px 0;
+  }
+
+  .goodreads {
+    padding-bottom: 15px;
+  }
+
+  .home__wrapper.home__wrapper--first {
+    order: -1;
+  }
+}
