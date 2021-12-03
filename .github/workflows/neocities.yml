@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: 15
     - run: npm i
-    - run: npm run build
+    - run: npm build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@master # dont use master in production
